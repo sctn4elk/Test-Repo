@@ -13,7 +13,7 @@
 
 #VERSION SPECIFIC CONSTANTS
 DEBIAN="buster"
-FLOW="Zymatic_v2.5_4.12.2021.json"
+FLOW="Zymatic_v2.5_5.23.2021.json"
 ZYMATICRECIPE="Zymatic_Test_Recipe.xml"
 
 #update the Raspberry Pi
@@ -21,12 +21,18 @@ echo "Updating the Raspberry Pi"
 sudo apt update
 sudo apt full-upgrade
 
-# Install packages
+# Install misc packages
+#******************************************************************************
 #PACKAGES=""
 #sudo apt install $PACKAGES -y
 sudo apt install build-essential git
 #sudo apt install ufw
 #sudo ufw enable
+
+#add 1 wire support
+#******************************************************************************
+echo "Adding 1-Wire Support on GPIO 4"
+sudo sed -i '/^\[all\].*/a dtoverlay=w1-gpio' /boot/config.txt
 
 #install node-red
 #******************************************************************************
@@ -61,6 +67,7 @@ then
 	npm install node-red-contrib-mytimeout 
 	npm install node-red-contrib-fs 
 	npm install node-red-contrib-influxdb
+	npm install node-red-contrib-timeprop
 	npm update socket.io --depth 2
 	npm install xmlhttprequest-ssl
 	npm install socket.io
@@ -154,8 +161,8 @@ then
 	bash <(curl -sL "http://$ipaddress:8086/query" --data-urlencode "q=CREATE USER grafana WITH PASSWORD 'changeme'")
 	bash <(curl -sL "http://$ipaddress:8086/query" --data-urlencode "q=GRANT ALL PRIVILEGES ON zymatic TO grafana")
 	
-	echo "Creating the node-red user"
-	#create user node-red with password 'changeme' with all privileges
+	echo "Creating the nodered user"
+	#create user nodered with password 'changeme' with all privileges
 	#grant all privileges on zymatic to node-red
 	bash <(curl -sL "http://$ipaddress:8086/query" --data-urlencode "q=CREATE USER nodered WITH PASSWORD 'changeme'")
 	bash <(curl -sL "http://$ipaddress:8086/query" --data-urlencode "q=GRANT ALL PRIVILEGES ON zymatic TO nodered")
@@ -210,7 +217,7 @@ fi
 
 #install grafana
 #******************************************************************************
-#Grafana admin password = changeme
+#Grafana admin password = admnin, set to changeme
 read -n 1 -s -r -p "Do you want to install grafana? [y/n]: " userinput
 if [ "$userinput" = "y" ]
 then 
