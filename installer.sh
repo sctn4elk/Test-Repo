@@ -7,14 +7,14 @@
 
 # REVISION HISTORY
 # Developer: Mike Howard
-# Build date: 4.30.2021
+# Build date: 6.2.2021
 # Version: 1.0.0
 
 
 #VERSION SPECIFIC CONSTANTS
 DEBIAN="buster"
-FLOW="Zymatic_v2.5_5.23.2021.json"
-ZYMATICRECIPE="Zymatic_Test_Recipe.xml"
+FLOW="Zymatic_v2.5_6.2.2021.json"
+ZYMATICRECIPE="Zymatic_Demo_Recipe.xml"
 
 #update the Raspberry Pi
 echo "Updating the Raspberry Pi"
@@ -99,13 +99,13 @@ then
 	then
 		# security file present...
 		echo "Modifying security"
-		sudo sed -i 's|^allow_anonymous.*|allow_anonymous false|g' $CONFIG
-		sudo sed -i 's|^password_file.*|password_file '"$PWFILE"'|g' $CONFIG
+		sudo sed -i 's/^allow_anonymous.*/allow_anonymous false/g' $CONFIG
+		sudo sed -i "s|^password_file.*|password_file $PWFILE|" $CONFIG
 	else
 		# Create the definition
 		echo "Creating security"
-		sudo sed -i '|^include_dir.*|i allow_anonymous false' $CONFIG
-		sudo sed -i '|^allow_anonymous.*|a password_file '"$PWFILE"'' $CONFIG
+		sudo sed -i '/^include_dir.*/i allow_anonymous false' $CONFIG
+		sudo sed -i "/^allow_anonymous.*/a password_file $PWFILE" $CONFIG
 	fi
 
 	#restart the mosquitto service
@@ -263,7 +263,7 @@ then
 	
 	#Download and copy node-red flow to /home/pi/.node-red
 	echo "Retrieving Node-Red Flow" 
-	wget -L https://raw.githubusercontent.com/sctn4elk/Test-Repo/main/Zymatic_v2.5_4.12.2021.json -P /home/pi
+	wget -L "https://raw.githubusercontent.com/sctn4elk/Test-Repo/main/$FLOW" -P /home/pi
 	if [ -f "/home/pi/$FLOW" ]
 	then
 		cp /home/pi/$FLOW /home/pi/.node-red/$NODEREDFLOW
@@ -277,7 +277,7 @@ then
 	
 	#Download and copy test recipe to /home/pi/Documents/beerXML
 	echo "Retrieving beerXML Test Recipe" 
-	wget -L https://raw.githubusercontent.com/sctn4elk/Test-Repo/main/Zymatic_Test_Recipe.xml -P /home/pi
+	wget -L "https://raw.githubusercontent.com/sctn4elk/Test-Repo/main/$ZYMATICRECIPE" -P /home/pi
 	if [ -f "/home/pi/$ZYMATICRECIPE" ]
 	then
 		cp /home/pi/$ZYMATICRECIPE /home/pi/Documents/beerXML/$ZYMATICRECIPE

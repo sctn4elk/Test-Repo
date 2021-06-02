@@ -4,18 +4,18 @@
     <VERSION>1</VERSION>
     <TYPE>All Grain</TYPE>
     <BREWER>Michael Howard</BREWER>
-    <BATCH_SIZE>9.46352945</BATCH_SIZE>
-    <BOIL_SIZE>12.5675671096</BOIL_SIZE>
+    <BATCH_SIZE>1</BATCH_SIZE>
+    <BOIL_SIZE>1</BOIL_SIZE>
     <BOIL_TIME>60</BOIL_TIME>
-    <EFFICIENCY>70</EFFICIENCY>
+    <EFFICIENCY>100</EFFICIENCY>
     <TASTE_NOTES>A heat step recipe to check temperatures.</TASTE_NOTES>
-    <DATE>8/29/2018 7:02:01 PM</DATE>
-    <OG>1.1023</OG>
-    <FG>1.0245</FG>
+    <DATE>5/19/2021 12:00:00 PM</DATE>
+    <OG>1.0000</OG>
+    <FG>1.0000</FG>
     <IBU>28</IBU>
-    <EST_COLOR>5</EST_COLOR>
-    <EST_ABV>10.1</EST_ABV>
-    <PRIMARY_AGE>10</PRIMARY_AGE>
+    <EST_COLOR>1</EST_COLOR>
+    <EST_ABV>1</EST_ABV>
+    <PRIMARY_AGE>1</PRIMARY_AGE>
     <PRIMARY_TEMP>20.5555555555556</PRIMARY_TEMP>
     <FERMENTATION_STAGES>1</FERMENTATION_STAGES>
     <STYLE>
@@ -24,157 +24,150 @@
       <NAME>Heat Check</NAME>
       <VERSION>1</VERSION>
       <STYLE_GUIDE>BJCP 2015</STYLE_GUIDE>
-      <OG_MIN>1.028</OG_MIN>
-      <OG_MAX>1.04</OG_MAX>
+      <OG_MIN>1.000</OG_MIN>
+      <OG_MAX>1.000</OG_MAX>
       <FG_MIN>0.998</FG_MIN>
-      <FG_MAX>1.008</FG_MAX>
-      <IBU_MIN>8</IBU_MIN>
-      <IBU_MAX>12</IBU_MAX>
-      <COLOR_MIN>2</COLOR_MIN>
-      <COLOR_MAX>3</COLOR_MAX>
+      <FG_MAX>1.000</FG_MAX>
+      <IBU_MIN>1</IBU_MIN>
+      <IBU_MAX>1</IBU_MAX>
+      <COLOR_MIN>1</COLOR_MIN>
+      <COLOR_MAX>1</COLOR_MAX>
     </STYLE>
     <NOTES />
     <ZYMATIC>
-      <MASH_TEMP>152</MASH_TEMP>
+      <MASH_TEMP>150</MASH_TEMP>
       <MASH_TIME>90</MASH_TIME>
       <BOIL_TEMP>207</BOIL_TEMP>
       <STEP>
-        <NAME>Heat 75</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>75</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
       <STEP>
-        <NAME>Heat 85</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>85</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
       <STEP>
-        <NAME>Heat 95</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>95</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
       <STEP>
-        <NAME>Heat 100</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>100</TEMP>
-        <TIME>1</TIME>
-        <LOCATION>0</LOCATION>
-        <DRAIN>0</DRAIN>
-      </STEP>
-      <STEP>
-        <NAME>Heat 105</NAME>
-        <TEMP>0</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Home-1</NAME>
+        <NAME>Mash 1</NAME>
         <TEMP>105</TEMP>
         <TIME>10</TIME>
         <LOCATION>1</LOCATION>
         <DRAIN>5</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 110</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>110</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 115</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>115</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 120</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>120</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 130</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>130</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 140</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>140</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 150</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>150</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Home-2</NAME>
+        <NAME>Mash 2</NAME>
         <TEMP>150</TEMP>
         <TIME>10</TIME>
         <LOCATION>1</LOCATION>
         <DRAIN>5</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 175</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>175</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 200</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>200</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Heat 207</NAME>
+        <NAME>Heat to Temp</NAME>
         <TEMP>207</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>0</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Adjunct-1</NAME>
+        <NAME>Boil Adjunct 1</NAME>
         <TEMP>207</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>2</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
       <STEP>
-        <NAME>Adjunct-2</NAME>
+        <NAME>Boil Adjunct 2</NAME>
         <TEMP>207</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>3</LOCATION>
-        <DRAIN>5</DRAIN>
+        <DRAIN>0</DRAIN>
       </STEP>
 	  <STEP>
-        <NAME>Adjunct-3</NAME>
+        <NAME>Boil Adjunct 3</NAME>
         <TEMP>207</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>4</LOCATION>
         <DRAIN>0</DRAIN>
       </STEP>
       <STEP>
-        <NAME>Adjunct-4</NAME>
+        <NAME>Boil Adjunct 4</NAME>
         <TEMP>207</TEMP>
-        <TIME>1</TIME>
+        <TIME>10</TIME>
         <LOCATION>5</LOCATION>
         <DRAIN>8</DRAIN>
       </STEP>
@@ -185,70 +178,94 @@
       <GRAIN_TEMP>22.22222</GRAIN_TEMP>
       <MASH_STEPS>
         <MASH_STEP>
-          <NAME>Dough In</NAME>
+          <NAME>Test</NAME>
           <VERSION>1</VERSION>
           <TYPE>Temperature</TYPE>
-          <STEP_TEMP>38.9</STEP_TEMP>
+          <STEP_TEMP>37.78</STEP_TEMP>
           <STEP_TIME>20</STEP_TIME>
         </MASH_STEP>
         <MASH_STEP>
-          <NAME>Mash 1</NAME>
+          <NAME>Test 1</NAME>
           <VERSION>1</VERSION>
           <TYPE>Temperature</TYPE>
-          <STEP_TEMP>66.7</STEP_TEMP>
-          <STEP_TIME>30</STEP_TIME>
+          <STEP_TEMP>65.56</STEP_TEMP>
+          <STEP_TIME>20</STEP_TIME>
         </MASH_STEP>
         <MASH_STEP>
-          <NAME>Mash 2</NAME>
+          <NAME>Test 2</NAME>
           <VERSION>1</VERSION>
           <TYPE>Temperature</TYPE>
-          <STEP_TEMP>67.8</STEP_TEMP>
-          <STEP_TIME>60</STEP_TIME>
+          <STEP_TEMP>69</STEP_TEMP>
+          <STEP_TIME>20</STEP_TIME>
         </MASH_STEP>
         <MASH_STEP>
-          <NAME>Mash Out</NAME>
+          <NAME>Test 3</NAME>
           <VERSION>1</VERSION>
           <TYPE>Temperature</TYPE>
-          <STEP_TEMP>79.4</STEP_TEMP>
+          <STEP_TEMP>76</STEP_TEMP>
           <STEP_TIME>10</STEP_TIME>
         </MASH_STEP>
       </MASH_STEPS>
     </MASH>
     <HOPS>
       <HOP>
-        <NAME>Cascade</NAME>
+        <NAME>Hop1</NAME>
         <VERSION>1</VERSION>
-        <ALPHA>7.1</ALPHA>
-        <AMOUNT>0.0283495231</AMOUNT>
+        <ALPHA>1</ALPHA>
+        <AMOUNT>0.0</AMOUNT>
         <USE>Boil</USE>
         <TIME>60</TIME>
+      </HOP>
+	  <HOP>
+        <NAME>Hop2</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>1</ALPHA>
+        <AMOUNT>0.0</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>45</TIME>
+      </HOP>
+	  <HOP>
+        <NAME>Hop3</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>1</ALPHA>
+        <AMOUNT>0.0</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>30</TIME>
+      </HOP>
+	  <HOP>
+        <NAME>Hop4</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>1</ALPHA>
+        <AMOUNT>0.0</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>15</TIME>
       </HOP>
     </HOPS>
     <WATERS>
       <WATER>
         <NAME>Water</NAME>
         <VERSION>1</VERSION>
-        <AMOUNT>12.5675671096</AMOUNT>
+        <AMOUNT>1</AMOUNT>
       </WATER>
     </WATERS>
     <FERMENTABLES>
       <FERMENTABLE>
-        <NAME>Light Dry Malt Extract</NAME>
+        <NAME>Grain</NAME>
         <VERSION>1</VERSION>
-        <AMOUNT>4.08233133</AMOUNT>
-        <TYPE>Dry Extract</TYPE>
-        <YIELD>43.7</YIELD>
-        <COLOR>1.925</COLOR>
+        <AMOUNT>1</AMOUNT>
+        <TYPE>Type 1</TYPE>
+        <YIELD>100</YIELD>
+        <COLOR>1</COLOR>
       </FERMENTABLE>
     </FERMENTABLES>
     <YEASTS>
       <YEAST>
-        <NAME>Belle Saison</NAME>
+        <NAME>Yeast 1</NAME>
         <VERSION>1</VERSION>
         <AMOUNT>0</AMOUNT>
         <FORM>Dry</FORM>
-        <LABORATORY>Danstar</LABORATORY>
-        <PRODUCT_ID>3</PRODUCT_ID>
+        <LABORATORY>Lab</LABORATORY>
+        <PRODUCT_ID>1</PRODUCT_ID>
         <MIN_TEMPERATURE>15.5555555555556</MIN_TEMPERATURE>
         <MAX_TEMPERATURE>25.5555555555556</MAX_TEMPERATURE>
         <ATTENUATION>76</ATTENUATION>
